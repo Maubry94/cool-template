@@ -24,8 +24,8 @@
     "html.format.enable": false,
     "json.format.enable": false,
     "eslint.workingDirectories": [
-        "./backend",
-		"./frontend"
+        "./nestjs",
+		"./vue"
     ],
     "typescript.tsdk": "node_modules/typescript/lib"
 }

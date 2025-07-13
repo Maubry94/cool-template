@@ -1,0 +1,18 @@
+{
+  "name": "template",
+  "type": "module",
+  "engines": {
+    "node": "22.15.0"
+  },
+  "scripts": {
+    "dev:nestjs": "npm run -w nestjs dev",
+    "dev:vue": "npm run -w vue dev",
+    "docker:prisma:studio": "docker compose exec nestjs npm -w nestjs run prisma:studio",
+    "docker:prisma:make-migration": "docker compose exec nestjs npm -w nestjs run prisma:make-migration",
+    "docker:prisma:apply-migration": "docker compose exec nestjs npm -w nestjs run prisma:apply-migration"
+  },
+  "workspaces": [
+    "nestjs",
+    "vue"
+  ]
+}
